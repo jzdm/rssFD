@@ -47,13 +47,18 @@ Write a new PHP class:
 
 The needed Methods are
 
-- ```
+-
+```
 public __construct($logger) {  
 	$this->logger = $logger;  
 	$this->name = "My Fancy RSS";  
 	$this->feedURL = "http://domain.tld/my.rss";  
-}```
-- ```public function loadFileList() {}```
+}
+```
+-
+```
+public function loadFileList() {}
+```
 
 The constructor is complete as it is here. `$this->name` will be the subfolder where the files are written to.
 
@@ -64,6 +69,7 @@ array_push($this->fileList,[
 	"title" =>$title,  
 	"url" => $link,  
 	"filename" => $name  
-]);```
+]);
+```
 
 To learn more, examine `rssFD/plugins/HeroldsbacherAnzeiger.php`.
